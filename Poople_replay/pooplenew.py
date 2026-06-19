@@ -3,7 +3,6 @@ import random
 BROWN = "\033[38;5;94m"
 RESET = "\033[0m"
 
-# Global variables
 inp = ""
 last_word = ""
 steps = 0
@@ -26,7 +25,6 @@ def validity():
 
 def checkbrown():
     global inp
-    # Colored hints
     colored = []
     for i in range(4):
         if inp[i] == anslist[i]:
