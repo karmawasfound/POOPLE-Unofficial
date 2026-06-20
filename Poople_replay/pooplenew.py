@@ -39,17 +39,14 @@ with open("words.txt", "r") as file:
 
 ans = "POOP"
 anslist = list(ans)
-
-start_word = random.choice(word_pool)
-inp = start_word
-last_word = ""   
+last_word = random.choice(word_pool)
+inp = last_word
 steps = 0
 
 print("Welcome to POOPLE unofficial!")
 print(f"Goal: reach '{ans}' in as few steps as possible.")
 print("Each new word must be a valid 4‑letter word and differ by exactly one letter from the previous one.")
 print("Your starting word: ")
-
 checkbrown()
 
 while inp != ans:
